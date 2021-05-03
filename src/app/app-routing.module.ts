@@ -15,8 +15,8 @@ const routes: Routes = [
     { path : 'demo4', component : Demo4Component },
   ] },
 
-  //{ path : "**", component : Demo4Component}
-  { path : "**", redirectTo : "demo/demo4"}
+  { path : "**", component : Demo4Component}
+  //{ path : "**", redirectTo : "demo/demo4"} 
 ];
 
 @NgModule({
