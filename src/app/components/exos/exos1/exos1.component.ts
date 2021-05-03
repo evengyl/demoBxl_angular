@@ -25,13 +25,15 @@ export class Exos1Component implements OnInit {
   public save : number[] = []
   public lastElem : number
 
-  constructor() {
+  constructor()
+  {
     this.var1 = 1
     this.var2 = 1
     this.tot = 0
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void
+  {
     this.lastElem = this.tot
   }
 

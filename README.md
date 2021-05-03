@@ -12,8 +12,10 @@ Run `ng serve` va démarrer le serveur sur le port 4200 par défaut
 Run `ng serve --port 4200` va démarrer le serveur en forcant sur le port 4200, on peux donc le changer
 ## Code scaffolding
 
-Pour creér un compo, on utilise la commande `ng g cpath/path/componame`
+Pour creér un compo, on utilise la commande `ng g path/path/componame`
 qui est l'abréviation de angular generate component
+
+Pour créer un pipe custom, on utilise la commande `ng g p path/path/pipeName`
 
 ## Build
 
@@ -36,3 +38,14 @@ dans un simple array, les différents résultat.
 en gros, un bouton pour voyager dans la suite de fibo
 et un bouton pour save une des valeurs voulue.
 réaliser simplement l'affichage de la DERNIERE value.
+
+## Exos 2 : Les pipes customs
+Créer un compo exos 2
+Dans se compo, créer un pipe, que vous nommerez convertTime
+ce pipe devra, sans fonctions !!!javascript!!!,
+Convertir un nombre entier ! en jour(S) heure(S) minute(S) seconde(S)
+et le retourner pour l'affichage
+Pour créer un pipe : ng g p path/NomPipe -> ng generate pipe path/NomPipe
+
+## Liens utiles
+Listes de pipes générique Angular : https://angular.io/api?type=pipe

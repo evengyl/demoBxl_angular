@@ -13,6 +13,9 @@ import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Exos1Component } from './components/exos/exos1/exos1.component';
+import { Demo5Component } from './components/demo/demo5/demo5.component';
+import { Demo6Component } from './components/demo/demo6/demo6.component';
+import { PowPipe } from './components/demo/demo6/pow.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { Exos1Component } from './components/exos/exos1/exos1.component';
     Demo3Component,
     Demo4Component,
     HeaderComponent,
-    Exos1Component
+    Exos1Component,
+    Demo5Component,
+    Demo6Component,
+    PowPipe
   ],
   imports: [
     BrowserModule,
