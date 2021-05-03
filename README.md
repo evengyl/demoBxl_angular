@@ -1,3 +1,6 @@
+# Créer un projet
+Pour créer un projet, ouvrir le dossier choisi dans visual code, ouvrir l'invite de commande, et lancer la commande "ng new NomDuPorjet"
+quand fini, fermer visual code, se redéplacer dans le dossier qu'il a créé, et relancer visual studio code dessus, rouvrir le console, et pour démarrer le projet, ng serve --port 4200 par exemple
 # Demarrer
 
 Pour démarrer cette démo vous devrez impérativement avoir angular installer par le NPM
