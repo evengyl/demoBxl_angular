@@ -61,7 +61,6 @@ BONUS 1 : l'affichage des contenu sera suffisamement dynamique pour n'afficher
 que les colonnes ou infos si elles existent.
 BONUS 2 : votre panier permettra de gérer des quantités également.
 BONUS 3 : votre panier permettra de gérer une valeur UNITAIRE de ces article et donc d'afficher un total HTVA et TVAC également.
-BONUS 4 : Super fetch !!!
 
 
 ## Liens utiles
