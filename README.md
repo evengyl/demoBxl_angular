@@ -21,6 +21,7 @@ Pour créer un pipe custom, on utilise la commande `ng g p path/path/pipeName`
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+
 ## Exos 1
 Créer ou reprendre l'app que nous avons faite,
 créer un parent (app.routing) nommé exos
@@ -39,6 +40,7 @@ en gros, un bouton pour voyager dans la suite de fibo
 et un bouton pour save une des valeurs voulue.
 réaliser simplement l'affichage de la DERNIERE value.
 
+
 ## Exos 2 : Les pipes customs
 Créer un compo exos 2
 Dans se compo, créer un pipe, que vous nommerez convertTime
@@ -46,6 +48,7 @@ ce pipe devra, sans fonctions !!!javascript!!!,
 Convertir un nombre entier ! en jour(S) heure(S) minute(S) seconde(S)
 et le retourner pour l'affichage
 Pour créer un pipe : ng g p path/NomPipe -> ng generate pipe path/NomPipe
+
 
 ## Exos 3 : Les panier
 Créer un compo exos 3
@@ -55,9 +58,10 @@ la colonne de droite quant à elle permettra l'affichage du contenu de ce panier
 chaque élement de ce panier pour être supprimé.
 
 BONUS 1 : l'affichage des contenu sera suffisamement dynamique pour n'afficher 
-que les colonnes ou infos si elle existe
+que les colonnes ou infos si elles existent.
 BONUS 2 : votre panier permettra de gérer des quantités également.
 BONUS 3 : votre panier permettra de gérer une valeur UNITAIRE de ces article et donc d'afficher un total HTVA et TVAC également.
+
 
 ## Liens utiles
 Listes de pipes générique Angular : https://angular.io/api?type=pipe
