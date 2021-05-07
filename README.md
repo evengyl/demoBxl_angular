@@ -47,5 +47,17 @@ Convertir un nombre entier ! en jour(S) heure(S) minute(S) seconde(S)
 et le retourner pour l'affichage
 Pour créer un pipe : ng g p path/NomPipe -> ng generate pipe path/NomPipe
 
+## Exos 3 : Les panier
+Créer un compo exos 3
+Dans ce compo, se retrouver deux colonnes, la première avec une input simple,
+ce input permettra l'ajout d'un article dans le panier, 
+la colonne de droite quant à elle permettra l'affichage du contenu de ce panier,
+chaque élement de ce panier pour être supprimé.
+
+BONUS 1 : l'affichage des contenu sera suffisamement dynamique pour n'afficher 
+que les colonnes ou infos si elle existe
+BONUS 2 : votre panier permettra de gérer des quantités également.
+BONUS 3 : votre panier permettra de gérer une valeur UNITAIRE de ces article et donc d'afficher un total HTVA et TVAC également.
+
 ## Liens utiles
 Listes de pipes générique Angular : https://angular.io/api?type=pipe

@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 7 : Les directives structurelles : *ngIf</span>
+                <p *ngIf="!statusAuth && !statusAuth2">Login</p>
+                <p *ngIf="!statusAuth && !statusAuth2">Signup</p>
+                <p *ngIf="statusAuth && statusAuth2">Logout</p>
+                <p *ngIf="statusAuth && statusAuth2">My Account</p>
+                <br>
+                <button (click)="login()" class="btn waves-effect green darken-1">Je me log</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 7 : Les directives structurelles : *ngFor</span>
+                <ul class="collection with-header black-text">
+                    <li class="collection-header">Itération de mon Array</li>
+                    <li *ngFor="let item of liste2" class="collection-item black-text">
+                        {{item}}
+                    </li>
+                </ul>
+                <hr>
+                <ul class="collection with-header black-text">
+                    <li class="collection-header">Itération de mon Array 2</li>
+                    <li *ngFor="let item of liste2 | keyvalue" class="collection-item black-text">
+                        {{item.key}} => {{ item.value | titlecase }}
+                    </li>
+                </ul>
+                <hr>
+                <ul class="collection with-header black-text">
+                    <li class="collection-header">Itération de mon Array 3</li>
+                    <li *ngFor="let item of liste2; let i = index" class="collection-item black-text">
+                        {{i}} => {{item}}
+                    </li>
+                </ul>
+                <hr>
+                <ul class="collection with-header">
+                    <li class="collection-header black-text">Itération de mon Objet</li>
+                    <li *ngFor="let item of liste1 | keyvalue" class="collection-item black-text">
+                        {{ item.key }} => {{ item.value }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 7 : Les directives structurelles : *ngFor</span>
+                <ul class="collection with-header black-text">
+                    <li class="collection-header">Itération de mon Tableau d'objet 'model user'</li>
+                    <li *ngFor="let item of users; let i = index" class="collection-item black-text">
+
+                        {{i}} : {{ item.name }} => {{ item.surname}} => {{item.age}}
+
+                        <ul *ngIf="!statusAuth" class="collection with-header black-text">
+                            <li class="collection-header">Tech's Favorites</li>
+                            <li class="collection-item black-text" *ngFor="let tech of item.techFav; let j = index">
+                                {{j}} --> {{tech}}<br>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
