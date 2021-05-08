@@ -9,6 +9,7 @@ import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exos1Component } from './components/exos/exos1/exos1.component';
 import { Exos2Component } from './components/exos/exos2/exos2.component';
+import { Exos3Component } from './components/exos/exos3/exos3.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
 
   { path : "exos", children : [
     { path : 'exos1', component : Exos1Component},
-    { path : 'exos2', component : Exos2Component}
+    { path : 'exos2', component : Exos2Component},
+    { path : 'exos3', component : Exos3Component}
   ]},
 
   { path : "**", component : Demo4Component}
