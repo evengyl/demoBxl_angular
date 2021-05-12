@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeService } from './time.service';
 
 @Component({
   selector: 'app-exos2',
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class Exos2Component implements OnInit {
 
   public varTime : number
-  constructor() {
-    this.varTime = 62587
+  constructor(private timeS : TimeService) {
+    
   }
 
   ngOnInit(): void {
+    this.varTime = this.timeS.varTime
+  }
+
+  maj()
+  {
+    this.timeS.varTime = this.varTime
   }
 
 }
