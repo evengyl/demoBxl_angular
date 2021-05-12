@@ -17,6 +17,11 @@ qui est l'abréviation de angular generate component
 
 Pour créer un pipe custom, on utilise la commande `ng g p path/path/pipeName`
 
+Pour créer une directive custom, on utilise la commande `ng g d path/path/DirectiveName`
+
+Pour créer un service, on utilise la commande `ng g s path/path/ServiceName`
+->attention il faut le rajouter dans le app.module.ts dans les provider
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.

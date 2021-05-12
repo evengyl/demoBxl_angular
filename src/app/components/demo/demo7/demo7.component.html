@@ -8,7 +8,7 @@
                 <p *ngIf="statusAuth && statusAuth2">Logout</p>
                 <p *ngIf="statusAuth && statusAuth2">My Account</p>
                 <br>
-                <button (click)="login()" class="btn waves-effect green darken-1">Je me log</button>
+                <button (click)="login()" class="btn waves-effect green darken-1">{{!statusAuth ? "Je me log" : "Je me délog"}}</button>
             </div>
         </div>
     </div>

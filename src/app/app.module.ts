@@ -25,6 +25,8 @@ import { Demo8Component } from './components/demo/demo8/demo8.component';
 import { Demo9Component } from './components/demo/demo9/demo9.component';
 import { HighlightDirective } from './components/demo/demo9/highlight.directive';
 import { RenderEventDirective } from './components/demo/demo9/render-event.directive';
+import { Demo10Component } from './components/demo/demo10/demo10.component';
+import { LoginService } from './components/demo/demo10/login.service';
 
 @NgModule({
   declarations: [
@@ -49,13 +51,16 @@ import { RenderEventDirective } from './components/demo/demo9/render-event.direc
     Demo9Component,
     HighlightDirective,
     RenderEventDirective,
+    Demo10Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
