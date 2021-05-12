@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TimeConverterPipe implements PipeTransform {
 
   transform(value: number, ...args: unknown[]): string {
-
+    console.log("impure")
     let heures = Math.floor(value/3600)
     let jours = Math.floor(heures/24)
     heures = heures - (jours * 24)
@@ -36,7 +36,7 @@ export class TimeConverterPipe implements PipeTransform {
 
 
 
-    return `${joursST} ${strForS_Jour} - ${heuresST} ${strForS_Heure} : ${minutsST} ${strForS_Heure} et ${secondsST} ${strForS_Seconds}`
+    return `${joursST} ${strForS_Jour} - ${heuresST} ${strForS_Heure} : ${minutsST} ${strForS_Minuts} et ${secondsST} ${strForS_Seconds}`
 
   }
 
