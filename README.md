@@ -67,6 +67,9 @@ que les colonnes ou infos si elles existent.
 BONUS 2 : votre panier permettra de gérer des quantités également.
 BONUS 3 : votre panier permettra de gérer une valeur UNITAIRE de ces article et donc d'afficher un total HTVA et TVAC également.
 
+## Exos 4 : les Services
+Reprennez les exos 1 et 2 et transformer les pour avoir un services dans chaque ! 
+seule condition : analisez les deux exos -> déterminer le plus opportun à avoir l'approche private ou public.
 
 ## Liens utiles
 Listes de pipes générique Angular : https://angular.io/api?type=pipe
