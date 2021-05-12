@@ -22,6 +22,9 @@ import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exos3Component } from './components/exos/exos3/exos3.component';
 import { CalculateTVAPipe } from './components/exos/exos3/calculate-tva.pipe';
 import { Demo8Component } from './components/demo/demo8/demo8.component';
+import { Demo9Component } from './components/demo/demo9/demo9.component';
+import { HighlightDirective } from './components/demo/demo9/highlight.directive';
+import { RenderEventDirective } from './components/demo/demo9/render-event.directive';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { Demo8Component } from './components/demo/demo8/demo8.component';
     Exos3Component,
     CalculateTVAPipe,
     Demo8Component,
+    Demo9Component,
+    HighlightDirective,
+    RenderEventDirective,
   ],
   imports: [
     BrowserModule,
