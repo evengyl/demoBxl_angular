@@ -21,6 +21,7 @@ import { TimeConverterPipe } from './components/exos/exos2/time-converter.pipe';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exos3Component } from './components/exos/exos3/exos3.component';
 import { CalculateTVAPipe } from './components/exos/exos3/calculate-tva.pipe';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CalculateTVAPipe } from './components/exos/exos3/calculate-tva.pipe';
     Demo7Component,
     Exos3Component,
     CalculateTVAPipe,
+    Demo8Component,
   ],
   imports: [
     BrowserModule,
