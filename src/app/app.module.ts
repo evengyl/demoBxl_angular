@@ -30,6 +30,7 @@ import { LoginService } from './components/demo/demo10/login.service';
 import { FibonacciService } from './components/exos/exos1/fibonacci.service';
 import { FibonacciPrivateService } from './components/exos/exos1/fibonacci-private.service';
 import { TimeService } from './components/exos/exos2/time.service';
+import { CardService } from './components/exos/exos3/card.service';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { TimeService } from './components/exos/exos2/time.service';
     LoginService,
     FibonacciService,
     FibonacciPrivateService,
-    TimeService
+    TimeService,
+    CardService
   ],
   bootstrap: [AppComponent]
 })

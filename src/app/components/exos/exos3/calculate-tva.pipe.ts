@@ -3,9 +3,6 @@ import { Article } from './Article.model';
 
 @Pipe({
   name: 'calculateTVA',
-  pure : false //permet a angular de relancer le pipe pour chaque changement détecter sur la page
-  //attention, détruit drastiquement les performance mais actuellement c'est la meilleur solution
-  //nous aurions pus faire ces calcules dans le compo, mais c'est tellement fun les pipe :)
 })
 export class CalculateTVAPipe implements PipeTransform {
   

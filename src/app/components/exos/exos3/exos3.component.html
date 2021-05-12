@@ -28,7 +28,7 @@
             <div class="card-content white-text">
                 <span class="card-title">Mon panier de course</span>
                 <ul class="collection with-header black-text">
-                    <li *ngFor="let item of listArticle" class="collection-item black-text">
+                    <li *ngFor="let item of listArticleCompo" class="collection-item black-text">
                         <p>{{item.name}} x {{item.qty}} à {{item.uPrice}} € HTVA/p</p>
                         <button (click)="deleteA(item)" class='btn waves-effect red darken-1'>Supprimer</button>
                     </li>
