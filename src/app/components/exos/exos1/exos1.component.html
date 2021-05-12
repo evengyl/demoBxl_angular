@@ -2,11 +2,30 @@
     <div class="col s12">
         <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-                <span class="card-title">Exos 1 : la suite de fibinacci</span>
+                <span class="card-title">Exos 1 : la suite de fibonacci</span>
                 <button (click)="calcul()" class="btn waves-effect green darken-1">suivant</button>
-                <p>{{ var1}} + {{var2 }} = {{ tot }}</p>
+                <p>
+                    {{ fiboService.var1 }} + {{ fiboService.var2 }} = 
+                    <span *ngIf="fiboService.tot > 0">{{ fiboService.tot }}</span>
+                </p>
                 <br><br>
                 <button (click)="viewSave()" class="btn waves-effect green darken-1">Last Element</button>
+                <p>La dernière valeur calculée : {{ fiboService.lastElem }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Exos 1 part 2 : la suite de fibonacci approche private</span>
+                <button (click)="calculP()" class="btn waves-effect green darken-1">suivant</button>
+                <p>
+                    {{ var1 }} + {{ var2 }} = 
+                    <span *ngIf="tot > 0">{{ tot }}</span>
+                </p>
+                <br><br>
+                <button (click)="viewSaveP()" class="btn waves-effect green darken-1">Last Element</button>
                 <p>La dernière valeur calculée : {{ lastElem }}</p>
             </div>
         </div>

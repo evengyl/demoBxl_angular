@@ -27,6 +27,8 @@ import { HighlightDirective } from './components/demo/demo9/highlight.directive'
 import { RenderEventDirective } from './components/demo/demo9/render-event.directive';
 import { Demo10Component } from './components/demo/demo10/demo10.component';
 import { LoginService } from './components/demo/demo10/login.service';
+import { FibonacciService } from './components/exos/exos1/fibonacci.service';
+import { FibonacciPrivateService } from './components/exos/exos1/fibonacci-private.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { LoginService } from './components/demo/demo10/login.service';
     FormsModule
   ],
   providers: [
-    LoginService
+    LoginService,
+    FibonacciService,
+    FibonacciPrivateService
   ],
   bootstrap: [AppComponent]
 })
