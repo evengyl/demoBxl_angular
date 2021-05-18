@@ -146,7 +146,7 @@ export class PromiseService {
 
     Promise.all([myPromiseAll1, myPromiseAll2, myPromiseAll3])
     .then((user : any) => { this.message = `Super j'ai résolu ma promesse, bonjour ${user[0].name}` })
-    .catch((error : any) => { this.message = `Hoops j'ai Raté ma promesse avec le message : ${error[0].message}` })
+    .catch((error : any) => { this.message = `Hoops j'ai Raté ma promesse avec le message : ${error.message}` })
   }
 
   pRace()
