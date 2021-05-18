@@ -68,8 +68,16 @@ BONUS 2 : votre panier permettra de gérer des quantités également.
 BONUS 3 : votre panier permettra de gérer une valeur UNITAIRE de ces article et donc d'afficher un total HTVA et TVAC également.
 
 ## Exos 4 : les Services
-Reprennez les exos 1 et 2 et transformer les pour avoir un services dans chaque ! 
+Reprennez les exos 2 et 3 et transformer les pour avoir un services dans chaque ! 
 seule condition : analisez les deux exos -> déterminer le plus opportun à avoir l'approche private ou public.
+
+## Exos 5 : Les promesses
+Créer un compo exos 5
+ce compo devra tout simplement faire 3 appel de promesse au choix (différentes !!!), comme vu dans la demo,
+Attention, ne pas copier coller c'est ridicule.
+Promesse 1 : parle de sauvegarde de donnée bancaire.
+Promesse 2 : parle de skynautique.
+Promesse 3 : parle de commande de matériel informatique.
 
 ## Liens utiles
 Listes de pipes générique Angular : https://angular.io/api?type=pipe
