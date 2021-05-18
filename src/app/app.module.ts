@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 
@@ -33,6 +33,7 @@ import { TimeService } from './components/exos/exos2/time.service';
 import { CardService } from './components/exos/exos3/card.service';
 import { Demo11Component } from './components/demo/demo11/demo11.component';
 import { PromiseService } from './components/demo/demo11/services/promise.service';
+import { Demo12Component } from './components/demo/demo12/demo12.component';
 
 @NgModule({
   declarations: [
@@ -59,11 +60,13 @@ import { PromiseService } from './components/demo/demo11/services/promise.servic
     RenderEventDirective,
     Demo10Component,
     Demo11Component,
+    Demo12Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     LoginService,
