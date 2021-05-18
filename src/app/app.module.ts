@@ -31,6 +31,8 @@ import { FibonacciService } from './components/exos/exos1/fibonacci.service';
 import { FibonacciPrivateService } from './components/exos/exos1/fibonacci-private.service';
 import { TimeService } from './components/exos/exos2/time.service';
 import { CardService } from './components/exos/exos3/card.service';
+import { Demo11Component } from './components/demo/demo11/demo11.component';
+import { PromiseService } from './components/demo/demo11/services/promise.service';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,7 @@ import { CardService } from './components/exos/exos3/card.service';
     HighlightDirective,
     RenderEventDirective,
     Demo10Component,
+    Demo11Component,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,8 @@ import { CardService } from './components/exos/exos3/card.service';
     FibonacciService,
     FibonacciPrivateService,
     TimeService,
-    CardService
+    CardService,
+    PromiseService
   ],
   bootstrap: [AppComponent]
 })

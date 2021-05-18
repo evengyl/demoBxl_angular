@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <button (click)="changeStatus()" class="btn waves-effect orange darken-1">Change status ({{ps.status}})</button>
+                <p *ngIf="ps.message">{{ps.message}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 11 : Promise simple 1</span>
+                <button (click)="pSimple1()" class="btn waves-effect green darken-1">Promise Simple 1</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 11 : Promise simple 2</span>
+                <button (click)="pSimple2()" class="btn waves-effect green darken-1">Promise Simple 2</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 11 : Promise simple 3</span>
+                <button (click)="pSimple3()" class="btn waves-effect green darken-1">Promise Simple 3</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 11 : PromiseAll</span>
+                <button (click)="pAll()" class="btn waves-effect green darken-1">Promise All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 11 : PromiseRace</span>
+                <button (click)="pRace()" class="btn waves-effect green darken-1">Promise Race</button>
+            </div>
+        </div>
+    </div>
+
+</div>
