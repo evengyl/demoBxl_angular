@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { generateForm } from './login.form';
 
 @Component({
   selector: 'app-demo12',
@@ -9,31 +10,14 @@ export class Demo12Component implements OnInit {
 
   public myForm : FormGroup
 
-  constructor(private fb : FormBuilder) { }
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.generateForm()
+    this.myForm = generateForm.login()
   }
 
 
-  generateForm()
-  {
-    this.myForm = this.fb.group({
-      name : ["", [Validators.required,
-                      Validators.minLength(3),
-                      Validators.maxLength(20)], 
-                      [/*Validators ASYNCHRONE*/]],
-      email : ["", [Validators.required,
-                                Validators.email], []],
-      password : ["", [Validators.required,
-                              Validators.minLength(6),
-                              Validators.maxLength(25)], []],
-      gender : ["", [Validators.required], []]
-    },
-    {
-      //validateurs de groupes
-    })
-  }
 
   submitForm()
   {
@@ -53,6 +37,11 @@ export class Demo12Component implements OnInit {
     this.myForm.controls.email.setValue("mail@JP.com")
     this.myForm.controls.password.setValue("test1234")
     this.myForm.controls.gender.setValue("Homme")
+  }
+
+
+  test(){
+    console.log(this.myForm)
   }
 
 

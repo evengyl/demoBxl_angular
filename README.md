@@ -79,5 +79,27 @@ Promesse 1 : parle de sauvegarde de donnée bancaire.
 Promesse 2 : parle de skynautique.
 Promesse 3 : parle de commande de matériel informatique.
 
+## Exos 6 : Les reactives forms
+Créer un formulaire reactif sur base de => 
+    nom de la ville  : -> 3 char min -> 20 char max -> requis
+    nom des habitant : -> 5 char min -> 30 char max -> requis
+    nombre d'hab     : -> 100 min -> 1000000 max -> requis
+    langue parlée[]  : -> requis
+    superficie km²   : -> 7 min -> 150 max -> requis
+## Exos 7 : Les validators custom
+Rajouter des validateurs custom =>
+## Exos 8 : Les validators async custom
+Rajouter des validateurs async custom
+## Exos 9 : Les Call API externe
+Créer un select sur les pays exsitant -> pour choisir la ou l'on veux créer notre ville
+
+
+
+
+
+
+
+
+
 ## Liens utiles
 Listes de pipes générique Angular : https://angular.io/api?type=pipe

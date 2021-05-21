@@ -11,7 +11,7 @@
                         <div *ngIf="myForm.controls.name.errors">
                             <p *ngIf="myForm.controls.name.errors.minlength">Le nom ne peux contenir moins de 3 caractères</p>
                             <p *ngIf="myForm.controls.name.errors.maxlength">Le nom ne peux contenir plus de 20 caractères</p>
-                            <p *ngIf="myForm.controls.name.errors.required">Champ requis</p>
+                            <p *ngIf="myForm.controls.name.errors.required && myForm.controls.name.touched">Champ requis</p>
                         </div>
                     </div>
                     <div class="input-field">
@@ -19,7 +19,7 @@
                         <label for="email">Email</label>
                         <div *ngIf="myForm.controls.email.errors">
                             <p *ngIf="myForm.controls.email.errors.email">Cette email n'est pas valide</p>
-                            <p *ngIf="myForm.controls.email.errors.required">Champ requis</p>
+                            <p *ngIf="myForm.controls.email.errors.required && myForm.controls.email.touched">Champ requis</p>
                         </div>
                     </div>
                     <div class="input-field">
@@ -28,19 +28,20 @@
                         <div *ngIf="myForm.controls.password.errors">
                             <p *ngIf="myForm.controls.password.errors.minlength">Le mot de passe ne peux contenir moins de 6 caractères</p>
                             <p *ngIf="myForm.controls.password.errors.maxlength">Le mot de passe ne peux contenir plus de 25 caractères</p>
-                            <p *ngIf="myForm.controls.password.errors.required">Champ requis</p>
+                            <p *ngIf="myForm.controls.password.errors.required && myForm.controls.password.touched">Champ requis</p>
                         </div>
 
                     </div>
                     <div class="input-field">
                         <select formControlName="gender" style="display:block;">
+                            <option default value=""></option>
                             <option value="Homme">Homme</option>
                             <option value="Femme">Femme</option>
                             <option value="Enfant">Enfant</option>
                             <option value="nc">Non renseigné</option>
                         </select>
                         <div *ngIf="myForm.controls.gender.errors">
-                            <p *ngIf="myForm.controls.gender.errors.required">Champ requis</p>
+                            <p *ngIf="myForm.controls.gender.errors.required && myForm.controls.gender.touched">Champ requis</p>
                         </div>
                     </div>
                     <button *ngIf="myForm.valid"  type="submit" class="btn waves-effect green darken-1">Submit</button>
@@ -53,3 +54,4 @@
 
 
 <button (click)="remplir()">Remplir</button>
+<button (click)="test()">test</button>
