@@ -87,11 +87,11 @@ Créer un formulaire reactif sur base de =>
     langue parlée[]  : -> requis
     superficie km²   : -> 7 min -> 150 max -> requis
 ## Exos 7 : Les validators custom
-Rajouter des validateurs custom =>
-## Exos 8 : Les validators async custom
-Rajouter des validateurs async custom
-## Exos 9 : Les Call API externe
+Rajouter des validateurs custom => devra vérifier que la ville ne contient pas de chiffre et de caractères spéciaux :)
+## Exos 8-9 : Les Call API externe & Les validators async custom
 Créer un select sur les pays exsitant -> pour choisir la ou l'on veux créer notre ville
+Rajouter des validateurs async custom - > aller chercher les nombres d'habitant et la superficie, 
+-> calculer ensuite le total hab et le total superficie 
 
 
 

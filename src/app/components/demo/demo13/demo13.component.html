@@ -1,0 +1,74 @@
+<div class="row">
+    
+    <div class="col s12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Demo 12 : les reactives forms</span>
+                <form (ngSubmit)="submitForm()" [formGroup]="myForm">
+                    <div class="input-field">
+                        <input formControlName="name" id="name" type=text>
+                        <label for="name">Nom</label>
+                        <div *ngIf="myForm.controls.name.errors">
+                            <p *ngIf="myForm.controls.name.errors.minlength">Le nom ne peux contenir moins de 3 caractères</p>
+                            <p *ngIf="myForm.controls.name.errors.maxlength">Le nom ne peux contenir plus de 20 caractères</p>
+                            <p *ngIf="myForm.controls.name.errors.required && myForm.controls.name.touched">Champ requis</p>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <input formControlName="email" id="email" type="email">
+                        <label for="email">Email</label>
+                        <div *ngIf="myForm.controls.email.errors">
+                            <p *ngIf="myForm.controls.email.errors.email">Cette email n'est pas valide</p>
+                            <p *ngIf="myForm.controls.email.errors.required && myForm.controls.email.touched">Champ requis</p>
+                            <p *ngIf="myForm.controls.email.errors.EmailErrorCustom">{{myForm.controls.email.errors.EmailErrorCustom}}</p>
+
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <input formControlName="password" id="password" type="password">
+                        <label for="password">Mot de passe</label>
+                        <div *ngIf="myForm.controls.password.errors">
+                            <p *ngIf="myForm.controls.password.errors.minlength">Le mot de passe ne peux contenir moins de 6 caractères</p>
+                            <p *ngIf="myForm.controls.password.errors.maxlength">Le mot de passe ne peux contenir plus de 25 caractères</p>
+                            <p *ngIf="myForm.controls.password.errors.required && myForm.controls.password.touched">Champ requis</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-field">
+                        <input [disabled]="myForm.controls.password.valid" formControlName="passwordConfirm" id="passwordbis" type="password">
+                        <label for="passwordbis">Confirmer votre Mot de passe</label>
+                        <div *ngIf="myForm.controls.passwordConfirm.errors">
+                            <p *ngIf="myForm.controls.passwordConfirm.errors.minlength">Le mot de passe ne peux contenir moins de 6 caractères</p>
+                            <p *ngIf="myForm.controls.passwordConfirm.errors.maxlength">Le mot de passe ne peux contenir plus de 25 caractères</p>
+                            <p *ngIf="myForm.controls.passwordConfirm.errors.required && myForm.controls.passwordConfirm.touched">Champ requis</p>
+                        </div>
+                        <div *ngIf="myForm.errors">
+                            <p *ngIf="myForm.errors.ErrorComparePass && !myForm.controls.passwordConfirm.pristine">{{myForm.errors.ErrorComparePass}}</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="input-field">
+                        <select formControlName="gender" style="display:block;">
+                            <option default value=""></option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="Enfant">Enfant</option>
+                            <option value="nc">Non renseigné</option>
+                        </select>
+                        <div *ngIf="myForm.controls.gender.errors">
+                            <p *ngIf="myForm.controls.gender.errors.required && myForm.controls.gender.touched">Champ requis</p>
+                        </div>
+                    </div>
+                    <button *ngIf="myForm.valid"  type="submit" class="btn waves-effect green darken-1">Submit</button>
+                    <button disabled *ngIf="!myForm.valid"  type="submit" class="btn waves-effect green darken-1">Le formulaire n'est pas valide</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button (click)="test()">test</button>
