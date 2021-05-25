@@ -100,7 +100,10 @@ Simple et rapide, retrouver ou recréer un micro services de fake connect, et em
 
 ## Exos 9 : Projet libre !!
 Contraintes : un appel API get, et un observable de type subject ou behaviorSubject !
-
+https://pokeapi.co/
+https://restcountries.eu/
+https://randomuser.me/
+https://blog.nicolas.brondin-bernard.com/apis-gratuites-puissantes-pour-projets-applications-site-web/
 
 
 
