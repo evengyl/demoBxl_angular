@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 import { HomeComponent } from './components/home/home.component';
@@ -40,6 +41,8 @@ import { GuardLoginService } from './components/demo/demo14/guard-login.service'
 import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14demi.component';
 import { Demo15Component } from './components/demo/demo15/demo15.component';
 import { LoginObsService } from './components/demo/demo15/login-obs.service';
+import { Demo16Component } from './components/demo/demo16/demo16.component';
+import { PokeServeService } from './components/demo/demo16/poke-serve.service';
 
 @NgModule({
   declarations: [
@@ -71,12 +74,14 @@ import { LoginObsService } from './components/demo/demo15/login-obs.service';
     Demo14Component,
     Demo14demiComponent,
     Demo15Component,
+    Demo16Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     LoginService,
@@ -86,7 +91,8 @@ import { LoginObsService } from './components/demo/demo15/login-obs.service';
     CardService,
     PromiseService,
     GuardLoginService,
-    LoginObsService
+    LoginObsService,
+    PokeServeService
   ],
   bootstrap: [AppComponent]
 })

@@ -98,10 +98,8 @@ Rajouter des validateurs custom => devra vérifier que la ville ne contient pas 
 Simple et rapide, retrouver ou recréer un micro services de fake connect, et empècher l'accès a la route de l'exos sur le panier !
 (on ne peux pas accèder a la notre panier sans être connecté !)
 
-## Exos 9-10 : Les Call API externe & Les validators async custom
-Créer un select sur les pays exsitant -> pour choisir la ou l'on veux créer notre ville
-Rajouter des validateurs async custom - > aller chercher les nombres d'habitant et la superficie, 
--> calculer ensuite le total hab et le total superficie 
+## Exos 9 : Projet libre !!
+Contraintes : un appel API get, et un observable de type subject ou behaviorSubject !
 
 
 

@@ -14,16 +14,10 @@ export class LoginObsService {
 
   constructor() { }
 
-  private emitStatus()
-  {
-    this.status$.next(this.status)
-  }
+  private emitStatus(){ this.status$.next(this.status) }
 
 
-  private emitMessage()
-  {
-    this.message$.next(this.message)
-  }
+  private emitMessage(){ this.message$.next(this.message) }
 
   public login()
   {
