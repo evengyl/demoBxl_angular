@@ -7,24 +7,25 @@ import { BehaviorSubject, Subject } from 'rxjs';
 export class LoginObsService {
 
   public status : boolean = false
-  public message : string = "Bonjour"
-
   public status$ : Subject<boolean> = new Subject<boolean>()
+  
+  public message : string = "Bonjour"
   public message$ : BehaviorSubject<string> = new BehaviorSubject<string>(this.message)
 
   constructor() { }
 
-  emitStatus()
+  private emitStatus()
   {
     this.status$.next(this.status)
   }
 
-  emitMessage()
+
+  private emitMessage()
   {
     this.message$.next(this.message)
   }
 
-  login()
+  public login()
   {
     this.status = true
     this.emitStatus()
@@ -32,7 +33,7 @@ export class LoginObsService {
     this.emitMessage()
   }
 
-  logout()
+  public logout()
   {
     this.status = false
     this.emitStatus()
