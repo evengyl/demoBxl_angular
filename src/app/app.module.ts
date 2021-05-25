@@ -35,6 +35,9 @@ import { Demo11Component } from './components/demo/demo11/demo11.component';
 import { PromiseService } from './components/demo/demo11/services/promise.service';
 import { Demo12Component } from './components/demo/demo12/demo12.component';
 import { Demo13Component } from './components/demo/demo13/demo13.component';
+import { Demo14Component } from './components/demo/demo14/demo14.component';
+import { GuardLoginService } from './components/demo/demo14/guard-login.service';
+import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14demi.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +66,8 @@ import { Demo13Component } from './components/demo/demo13/demo13.component';
     Demo11Component,
     Demo12Component,
     Demo13Component,
+    Demo14Component,
+    Demo14demiComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,8 @@ import { Demo13Component } from './components/demo/demo13/demo13.component';
     FibonacciPrivateService,
     TimeService,
     CardService,
-    PromiseService
+    PromiseService,
+    GuardLoginService
   ],
   bootstrap: [AppComponent]
 })
