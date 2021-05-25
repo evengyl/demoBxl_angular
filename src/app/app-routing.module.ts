@@ -9,6 +9,7 @@ import { AdminGuardGuard } from './components/demo/demo14/admin-guard.guard';
 import { Demo14Component } from './components/demo/demo14/demo14.component';
 import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14demi.component';
 import { GuardLoginService } from './components/demo/demo14/guard-login.service';
+import { Demo15Component } from './components/demo/demo15/demo15.component';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
@@ -40,6 +41,8 @@ const routes: Routes = [
     { path : 'demo13', component : Demo13Component },
     { path : 'demo14', component : Demo14Component },
     { path : 'demo14_5', component : Demo14demiComponent, canActivate : [AdminGuardGuard] },
+    { path : 'demo15', component : Demo15Component },
+
   ] },
 
   { path : "exos", children : [

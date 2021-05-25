@@ -38,6 +38,8 @@ import { Demo13Component } from './components/demo/demo13/demo13.component';
 import { Demo14Component } from './components/demo/demo14/demo14.component';
 import { GuardLoginService } from './components/demo/demo14/guard-login.service';
 import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14demi.component';
+import { Demo15Component } from './components/demo/demo15/demo15.component';
+import { LoginObsService } from './components/demo/demo15/login-obs.service';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,7 @@ import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14d
     Demo13Component,
     Demo14Component,
     Demo14demiComponent,
+    Demo15Component,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +85,8 @@ import { Demo14demiComponent } from './components/demo/demo14/demo14demi/demo14d
     TimeService,
     CardService,
     PromiseService,
-    GuardLoginService
+    GuardLoginService,
+    LoginObsService
   ],
   bootstrap: [AppComponent]
 })
