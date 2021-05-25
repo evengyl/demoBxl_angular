@@ -88,7 +88,12 @@ Créer un formulaire reactif sur base de =>
     superficie km²   : -> 7 min -> 150 max -> requis
 ## Exos 7 : Les validators custom
 Rajouter des validateurs custom => devra vérifier que la ville ne contient pas de chiffre et de caractères spéciaux :)
-## Exos 8-9 : Les Call API externe & Les validators async custom
+
+## Exos 8 : Les Guard
+Simple et rapide, retrouver ou recréer un micro services de fake connect, et empècher l'accès a la route de l'exos sur le panier !
+(on ne peux pas accèder a la notre panier sans être connecté !)
+
+## Exos 9-10 : Les Call API externe & Les validators async custom
 Créer un select sur les pays exsitant -> pour choisir la ou l'on veux créer notre ville
 Rajouter des validateurs async custom - > aller chercher les nombres d'habitant et la superficie, 
 -> calculer ensuite le total hab et le total superficie 
